@@ -1,3 +1,14 @@
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+
+  preloader.style.transition = "opacity 0.6s ease";
+  preloader.style.opacity = "0";
+
+  setTimeout(() => {
+    preloader.style.display = "none";
+  }, 600);
+});
+
 const panel = document.getElementById('panel');
 
 document.getElementById("convertbtn").addEventListener("click", () =>{
@@ -26,3 +37,4 @@ document.getElementById("convertbtn").addEventListener("click", () =>{
         return;
     }
 });
+
